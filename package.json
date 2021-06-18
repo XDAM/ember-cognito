@@ -1,6 +1,6 @@
 {
   "name": "@xdam/ember-cognito",
-  "version": "0.12.0-xdam-0.1.1",
+  "version": "0.12.0-xdam-0.1.2",
   "description": "ember-simple-auth and AWS Cognito integration",
   "keywords": [
     "ember-addon",
@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "@aws-amplify/auth": "^4.0.3",
-    "@aws-amplify/core": "^3.8.7",
+    "@aws-amplify/core": "^4.1.1",
     "amazon-cognito-identity-js": "^4.5.5",
     "ember-auto-import": "^1.9.0",
     "ember-cli-babel": "^7.22.1",
