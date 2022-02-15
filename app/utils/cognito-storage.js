@@ -1,1 +1,1 @@
-export { default } from 'ember-cognito/utils/cognito-storage';
+export { default } from '@xdam/ember-cognito/utils/cognito-storage';

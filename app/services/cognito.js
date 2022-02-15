@@ -1,4 +1,4 @@
-import CognitoService from 'ember-cognito/services/cognito';
+import CognitoService from '@xdam/ember-cognito/services/cognito';
 import ENV from '../config/environment';
 
 const cognitoEnv = Object.assign(

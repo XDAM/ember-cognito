@@ -1,1 +1,1 @@
-export * from 'ember-cognito/test-support/helpers/ember-cognito';
+export * from '@xdam/ember-cognito/test-support/helpers/ember-cognito';
