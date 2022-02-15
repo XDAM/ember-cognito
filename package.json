@@ -1,12 +1,12 @@
 {
-  "name": "ember-cognito",
+  "name": "@xdam/ember-cognito",
   "version": "1.0.0",
   "description": "ember-simple-auth and AWS Cognito integration",
   "keywords": [
     "ember-addon",
     "cognito"
   ],
-  "repository": "https://github.com/paulcwatts/ember-cognito",
+  "repository": "https://github.com/XDAM/ember-cognito",
   "license": "MIT",
   "author": "Paul Watts <paulcwatts@gmail.com>",
   "directories": {
