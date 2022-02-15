@@ -86,6 +86,18 @@ export default class CognitoAuthenticator extends Base {
     }
 
     const { auth, authenticationFlowType, cognito } = this;
+
+    // customization to allow magic links to work with ember-cognito
+    if (params.authenticationFlowType == 'CUSTOM_AUTH') {
+      cognito.configure({
+        authenticationFlowType: params.authenticationFlowType,
+      });
+      let user = await auth.signIn(username);
+      user = await auth.sendCustomChallengeAnswer(user, params.challenge);
+
+      return this._handleSignIn(user);
+    }
+
     cognito.configure({ authenticationFlowType });
 
     const user = await auth.signIn(username, password);
