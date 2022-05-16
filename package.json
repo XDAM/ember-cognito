@@ -1,6 +1,6 @@
 {
   "name": "@xdam/ember-cognito",
-  "version": "1.0.0-xdam.1.0.1",
+  "version": "1.0.0-xdam.1.0.2",
   "description": "ember-simple-auth and AWS Cognito integration",
   "keywords": [
     "ember-addon",
