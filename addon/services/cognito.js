@@ -46,13 +46,14 @@ export default class CognitoService extends Service {
    * @param attributes New user attributes.
    * @param validationData Application metadata.
    */
-  async signUp(username, password, attributes, validationData) {
+  async signUp(username, password, attributes, validationData, clientMetadata) {
     this.configure();
     const result = await this.auth.signUp({
       username,
       password,
       attributes: normalizeAttributes(attributes),
       validationData,
+      clientMetadata,
     });
     // Replace the user with a wrapped user.
     result.user = this._setUser(result.user);
